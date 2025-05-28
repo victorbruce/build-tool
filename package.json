@@ -17,6 +17,7 @@
   "author": "Victor Bruce",
   "license": "ISC",
   "devDependencies": {
+    "@types/lodash": "^4.17.17",
     "ts-loader": "^9.5.2",
     "typescript": "^5.8.3",
     "webpack": "^5.99.9",

@@ -1,11 +1,19 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.ts",
   devtool: "inline-source-map",
   devServer: {
-    static: "./dist",
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+    open: true,
+    hot: true,
+    liveReload: true,
+    port: 3000,
   },
+  mode: "development",
   module: {
     rules: [
       {
@@ -16,13 +24,20 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Build Tool",
+      template: "./src/index.html",
+      filename: "index.html",
+    }),
+  ],
   resolve: {
     extensions: [".ts", ".js"],
   },
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
-    clean: true
+    clean: true,
   },
   optimization: {
     runtimeChunk: "single",

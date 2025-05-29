@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+@mixin container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-between {
+  @include flex-center;
+  justify-content: space-between;
+}
+
+@mixin hover-transform {
+  transition: transform 0.2s;
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@mixin responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $spacing-lg;
+}
+
+@mixin button-base {
+  border: none;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $radius-md;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}

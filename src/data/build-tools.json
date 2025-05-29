@@ -1,0 +1,74 @@
+{
+  "buildTools": [
+    {
+      "name": "Webpack",
+      "description": "A static module bundler for JavaScript applications that processes and transforms various resources into a dependency graph, allowing you to use and import modules.",
+      "website": "https://webpack.js.org",
+      "logo": "https://webpack.js.org/assets/logo.png",
+      "category": "Bundler"
+    },
+    {
+      "name": "Babel",
+      "description": "A JavaScript compiler that allows developers to use next-generation JavaScript features by transforming modern code into backward-compatible versions.",
+      "website": "https://babeljs.io",
+      "logo": "https://d33wubrfki0l68.cloudfront.net/7a197cfe44548cc1a3f581152af70a3051e11671/78df8/img/babel.svg",
+      "category": "Compiler"
+    },
+    {
+      "name": "Gulp",
+      "description": "A toolkit to automate painful or time-consuming tasks in your development workflow through streaming builds that are efficient and code-over-configuration focused.",
+      "website": "https://gulpjs.com",
+      "logo": "https://gulpjs.com/img/gulp.png",
+      "category": "Task Runner"
+    },
+    {
+      "name": "ESLint",
+      "description": "A static code analysis tool for identifying problematic patterns in JavaScript code, ensuring code consistency and avoiding bugs.",
+      "website": "https://eslint.org",
+      "logo": "https://eslint.org/assets/logo.svg",
+      "category": "Linter"
+    },
+    {
+      "name": "Grunt",
+      "description": "A JavaScript task runner that automates repetitive tasks like minification, compilation, unit testing, and linting through configuration over code.",
+      "website": "https://gruntjs.com",
+      "logo": "https://gruntjs.com/img/grunt-logo-no-wordmark.svg",
+      "category": "Task Runner"
+    },
+    {
+      "name": "Rollup",
+      "description": "A module bundler for JavaScript that compiles small pieces of code into something larger and more complex, optimizing for ES modules.",
+      "website": "https://rollupjs.org",
+      "logo": "https://rollupjs.org/rollup-logo.svg",
+      "category": "Bundler"
+    },
+    {
+      "name": "Parcel",
+      "description": "A zero-configuration web application bundler that offers blazing fast performance and requires no configuration files.",
+      "website": "https://parceljs.org",
+      "logo": "https://parceljs.org/assets/og.png",
+      "category": "Bundler"
+    },
+    {
+      "name": "Prettier",
+      "description": "An opinionated code formatter that enforces a consistent style by parsing your code and re-printing it with its own rules.",
+      "website": "https://prettier.io",
+      "logo": "https://prettier.io/icon.png",
+      "category": "Formatter"
+    },
+    {
+      "name": "TypeScript",
+      "description": "A strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.",
+      "website": "https://www.typescriptlang.org",
+      "logo": "https://raw.githubusercontent.com/microsoft/TypeScript-Website/f407e1ae19e5e990d9901ac8064a32a8cc60edf0/packages/typescriptlang-org/static/branding/ts-logo-512.svg",
+      "category": "Compiler"
+    },
+    {
+      "name": "Vite",
+      "description": "A next-generation frontend build tool that significantly improves the frontend development experience with features like instant server start and hot module replacement.",
+      "website": "https://vitejs.dev",
+      "logo": "https://vitejs.dev/logo.svg",
+      "category": "Dev Server & Bundler"
+    }
+  ]
+}

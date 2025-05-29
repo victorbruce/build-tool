@@ -4,7 +4,7 @@ const setInitialTheme = () => {
   const themeToggle = document.getElementById(
     'theme-toggle'
   ) as HTMLButtonElement | null;
-  if (!themeToggle) return; // Don't crash if the element isn't there
+  if (!themeToggle) return;
 
   if (prefersDarkScheme.matches) {
     document.documentElement.setAttribute('data-theme', 'dark');

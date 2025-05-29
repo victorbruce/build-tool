@@ -4,7 +4,7 @@
       "name": "Webpack",
       "description": "A static module bundler for JavaScript applications that processes and transforms various resources into a dependency graph, allowing you to use and import modules.",
       "website": "https://webpack.js.org",
-      "logo": "https://webpack.js.org/assets/logo.png",
+      "logo": "https://webpack.js.org/assets/icon-square-big.svg",
       "category": "Bundler"
     },
     {
@@ -18,14 +18,14 @@
       "name": "Gulp",
       "description": "A toolkit to automate painful or time-consuming tasks in your development workflow through streaming builds that are efficient and code-over-configuration focused.",
       "website": "https://gulpjs.com",
-      "logo": "https://gulpjs.com/img/gulp.png",
+      "logo": "https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png",
       "category": "Task Runner"
     },
     {
       "name": "ESLint",
       "description": "A static code analysis tool for identifying problematic patterns in JavaScript code, ensuring code consistency and avoiding bugs.",
       "website": "https://eslint.org",
-      "logo": "https://eslint.org/assets/logo.svg",
+      "logo": "https://eslint.org/icon.svg",
       "category": "Linter"
     },
     {

@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+.footer {
+  background: var(--footer-bg);
+  padding: $spacing-lg;
+  text-align: center;
+  margin-top: auto;
+
+  p {
+    color: var(--text);
+    opacity: 0.8;
+  }
+}

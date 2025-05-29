@@ -1,4 +1,7 @@
 import './scss/style.scss';
+import buildToolsData from './data/build-tools.json';
+import { renderTools } from './components/BuildTools';
+import { setInitialTheme } from './utils/Theme';
 
-console.log("webpack is running but");
-console.log('hi an error')
+setInitialTheme();
+renderTools(buildToolsData.buildTools);

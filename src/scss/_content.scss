@@ -1,0 +1,59 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.main-content {
+  flex: 1;
+  padding: $spacing-xl;
+
+  .tools-grid {
+    @include responsive-grid;
+    margin-top: $spacing-xl;
+  }
+
+  .tool-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: $radius-md;
+    padding: $spacing-lg;
+    @include hover-transform;
+
+    .header {
+      @include flex-center;
+    }
+
+    .tool-logo {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: $spacing-md;
+    }
+
+    h3 {
+      color: var(--primary);
+      margin-bottom: $spacing-sm;
+    }
+
+    .category {
+      display: inline-block;
+      background: var(--secondary);
+      padding: $spacing-xs $spacing-sm;
+      border-radius: $radius-sm;
+      font-size: 0.875rem;
+      margin-bottom: $spacing-sm;
+    }
+
+    p {
+      margin-bottom: $spacing-md;
+      line-height: 1.5;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

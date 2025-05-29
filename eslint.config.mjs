@@ -4,7 +4,6 @@ import tseslint from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
 import prettier from 'eslint-config-prettier';
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
   js.configs.recommended,
   {
@@ -31,8 +30,8 @@ export default [
         'error',
         {
           object: 'console',
-          property: 'warn',
-          message: 'Please use a proper logging system instead of console.warn',
+          property: 'error',
+          message: 'Please use a proper logging system instead of console.error',
         },
       ],
       'no-var': 'error',

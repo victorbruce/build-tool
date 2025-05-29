@@ -31,10 +31,20 @@ export default [
         {
           object: 'console',
           property: 'error',
-          message: 'Please use a proper logging system instead of console.error',
+          message:
+            'Please use a proper logging system instead of console.error',
         },
       ],
       'no-var': 'error',
+      'prefer-const': 'error',
+      'prefer-template': 'error',
+      'prefer-destructuring': [
+        'error',
+        {
+          object: true,
+          array: false,
+        },
+      ],
     },
   },
   {

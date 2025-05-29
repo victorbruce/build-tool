@@ -8,6 +8,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname, "dist"),
     },
+    watchFiles: ["src/**/*"],
     open: true,
     hot: true,
     liveReload: true,
@@ -22,6 +23,18 @@ module.exports = {
         include: [path.resolve(__dirname, "src")],
         exclude: /node_modules/,
       },
+      {
+        test: /\.s[ac]ss$/i,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      }
     ],
   },
   plugins: [

@@ -9,16 +9,20 @@ module.exports = {
   module: {
     rules: [
       {
-        test: "/.ts$/",
+        test: /\.ts$/,
         use: "ts-loader",
         include: [path.resolve(__dirname, "src")],
-        exclude: "/node_modules/",
+        exclude: /node_modules/,
       },
     ],
+  },
+  resolve: {
+    extensions: [".ts", ".js"],
   },
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
+    clean: true
   },
   optimization: {
     runtimeChunk: "single",

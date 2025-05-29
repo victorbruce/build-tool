@@ -1,0 +1,40 @@
+// light-theme colors
+$light-bg: #ffffff;
+$light-text: #333333;
+$light-primary: #2563eb;
+$light-secondary: #f3f4f6;
+$light-accent: #3b82f6;
+$light-card-bg: #ffffff;
+$light-card-border: #e5e7eb;
+$light-nav-bg: #ffffff;
+$light-footer-bg: #f9fafb;
+
+// Dark theme colors
+$dark-bg: #111827;
+$dark-text: #e5e7eb;
+$dark-primary: #3b82f6;
+$dark-secondary: #1f2937;
+$dark-accent: #60a5fa;
+$dark-card-bg: #1f2937;
+$dark-card-border: #374151;
+$dark-nav-bg: #111827;
+$dark-footer-bg: #1f2937;
+
+// Breakpoints
+$mobile: 640px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Spacing
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+
+// Container
+$container-max-width: 1200px;
+
+// Border radius
+$radius-sm: 0.25rem;
+$radius-md: 0.5rem;

@@ -10,7 +10,8 @@
     "start": "webpack serve --open",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "format": "prettier --write 'src/**/*.{ts,tsx,js,json,css,scss,md}'",
-    "check": "npm run lint && prettier --check 'src/**/*.{ts,tsx,js,json,css,scss,md}'"
+    "check": "npm run lint && prettier --check 'src/**/*.{ts,tsx,js,json,css,scss,md}'",
+    "prepare": "husky install"
   },
   "keywords": [
     "CSS",
@@ -34,6 +35,8 @@
     "globals": "^16.2.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
     "prettier": "^3.5.3",
     "sass": "^1.89.0",
     "sass-loader": "^16.0.5",
@@ -47,5 +50,14 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "lint-staged": {
+    "**/*.{ts,js}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "**/*.{json,css,scss,md,html}": [
+      "prettier --write"
+    ]
   }
 }

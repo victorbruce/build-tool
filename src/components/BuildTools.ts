@@ -1,9 +1,8 @@
 import _ from 'lodash';
 import { BuildTool } from '../types';
 
-const toolsGrid = document.getElementById('tools-grid') as HTMLDivElement;
-
 const renderTools = (tools: BuildTool[]) => {
+  const toolsGrid = document.getElementById('tools-grid') as HTMLDivElement;
   toolsGrid.innerHTML = _.join(
     tools.map(
       (tool) => `

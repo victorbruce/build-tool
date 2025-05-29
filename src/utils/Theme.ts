@@ -1,12 +1,11 @@
-// Theme management
-const themeToggle = document.getElementById(
-  'theme-toggle'
-) as HTMLButtonElement;
-
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-// Set initial theme based on user preference
 const setInitialTheme = () => {
+  const themeToggle = document.getElementById(
+    'theme-toggle'
+  ) as HTMLButtonElement | null;
+  if (!themeToggle) return; // Don't crash if the element isn't there
+
   if (prefersDarkScheme.matches) {
     document.documentElement.setAttribute('data-theme', 'dark');
     themeToggle.textContent = '☀️ Light Mode';
@@ -14,17 +13,15 @@ const setInitialTheme = () => {
     document.documentElement.setAttribute('data-theme', 'light');
     themeToggle.textContent = '🌙 Dark Mode';
   }
+
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+    document.documentElement.setAttribute('data-theme', newTheme);
+    themeToggle.textContent =
+      newTheme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode';
+  });
 };
-
-const toggleTheme = () => {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
-  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-
-  document.documentElement.setAttribute('data-theme', newTheme);
-  themeToggle.textContent =
-    newTheme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode';
-};
-
-themeToggle.addEventListener('click', toggleTheme);
 
 export { setInitialTheme };

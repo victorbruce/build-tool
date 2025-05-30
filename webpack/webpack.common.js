@@ -3,6 +3,9 @@
 /* global module */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   entry: './src/index.ts',
@@ -44,6 +47,9 @@ module.exports = {
       title: 'Build Tool',
       template: './src/index.html',
       filename: 'index.html',
+    }),
+    new MiniCssExtractPlugin({
+      filename: isProduction ? '[name].[contenthash].css' : '[name].css',
     }),
   ],
   resolve: {

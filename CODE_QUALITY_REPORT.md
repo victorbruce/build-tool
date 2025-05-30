@@ -4,7 +4,7 @@ After setting up eslint in my project, I run the command `npm run lint` and got 
 
 ## Extending ESLint to add my own custom rules
 
-Below are some of my personal rules I set within my project aside the recommeded eslint rules.
+Below are some of my personal rules I set within my project aside the recommended eslint rules.
 
 - `prefer-const` – encourages immutable variables
 - `prefer-template` – cleaner string concatenation

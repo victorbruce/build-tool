@@ -1,7 +1,7 @@
 import { BuildTool } from '../types';
 
 const renderTools = async (tools: BuildTool[]) => {
-  const _ = await import('lodash'); // dynamically load lodash
+  const { default: _ } = await import('lodash'); // dynamically load lodash
 
   const toolsGrid = document.getElementById('tools-grid') as HTMLDivElement;
 

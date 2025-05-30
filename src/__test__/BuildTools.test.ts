@@ -1,9 +1,7 @@
 import { renderTools } from '../components/BuildTools';
-import _ from 'lodash';
 
 describe('BuildTools', () => {
   beforeEach(() => {
-    // Create a mock tools grid element
     document.body.innerHTML = '<div id="tools-grid"></div>';
   });
 
@@ -11,7 +9,7 @@ describe('BuildTools', () => {
     document.body.innerHTML = '';
   });
 
-  test('renderTools renders tools correctly', () => {
+  test('renderTools renders tools correctly', async () => {
     const mockTools = [
       {
         name: 'Test Tool',
@@ -22,7 +20,7 @@ describe('BuildTools', () => {
       },
     ];
 
-    renderTools(mockTools);
+    await renderTools(mockTools); // ✅ await because renderTools is now async
 
     const toolsGrid = document.getElementById('tools-grid');
 
@@ -33,8 +31,8 @@ describe('BuildTools', () => {
     expect(toolsGrid).toContainHTML('test-logo.png');
   });
 
-  test('renderTools handles empty tools array', () => {
-    renderTools([]);
+  test('renderTools handles empty tools array', async () => {
+    await renderTools([]); // ✅ also await this call
 
     const toolsGrid = document.getElementById('tools-grid');
     expect(toolsGrid?.innerHTML).toBe('');

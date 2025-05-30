@@ -111,6 +111,24 @@ Next, I configured ESLint, Prettier, and added Husky to run linting and formatti
 
 **Finally**, I built my UI, made it functional, and wrote test.
 
+### NPM Scripts and their role
+
+`test`: runs a test suite using Jest.
+
+`dev`: Starts the Webpack Dev Server in development mode and opens the browser
+
+`start`: same as dev, but without auto-opening the browser.
+
+`build`: builds the production-ready version of your app.
+
+`lint`: runs ESLint on all .ts and .tsx files in src/ to catch style and syntax issues.
+
+`format`: formats code using Prettier. Automatically fixes code style issues.
+
+`check`: ensures code is both linted and formatted correctly
+
+`prepare`: enable Husky Git hooks on install
+
 ## 🚀 Deployment
 
 Netlify

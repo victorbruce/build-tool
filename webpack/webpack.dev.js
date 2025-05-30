@@ -13,10 +13,10 @@ module.exports = merge(common, {
     static: {
       directory: path.join(__dirname, '../dist'),
     },
-    watchFiles: ['src/**/*'],
     open: true,
     hot: true,
     liveReload: true,
     port: 3000,
+    watchFiles: ['src/**/*'],
   },
 });
